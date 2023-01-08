@@ -217,7 +217,7 @@ li {
     right: -9px;
     background-color: #F16D7F;
     color: white;
-    padding-left: 5px;
+    text-align: center;
 }
 
 .header__cart-icon:hover {

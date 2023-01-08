@@ -525,6 +525,12 @@
 
             closeButton.addEventListener('click', () => {
                 productListElem.removeChild(liEl);
+
+                articlesInCart = articlesInCart - quantityAdded;
+                cartCounter.textContent = articlesInCart;
+
+                quantityAdded = 0;
+
                 if (!productListElem.firstElementChild) {
                     cartElement.style.display = 'none';
                     cartCounter.style.display = 'none';
@@ -532,10 +538,6 @@
             })
 
         });
-
-
-
-
 
     </script>
 </body>
